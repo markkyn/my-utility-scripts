@@ -1,0 +1,20 @@
+Host github.com
+        User git
+        Hostname github.com
+        PreferredAuthentications publickey
+        IdentityFile /home/<user>/.ssh/github_key
+
+Host gitlab.com
+        User git
+        Hostname gitlab.com
+        PreferredAuthentications publickey
+        IdentityFile /home/<user>/.ssh/gitlab_key
+
+Host github_2.com
+        User git
+        Hostname github.com
+        PreferredAuthentications publickey
+        IdentityFile /home/<user>/.ssh/github_2_key
+
+# For the second github account just use:
+git remote set-url origin git@github_2.com:<user>/<repo>
